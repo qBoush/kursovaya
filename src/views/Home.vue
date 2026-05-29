@@ -92,27 +92,27 @@ export default {
       </div>
       <div class="news-card">
         <img class="news-image-2" src="../images/home/sectionnews/image 216.png" height="169" width="300"/>
-      <div class="news-card-info">
-        <h1>
-          Чемпионы The<br>
-          international 2025
-        </h1>
-        <p>
-          Поздравляем команду Team Falcons — чемпионов The International 2025. В течение последнего года команда выступала с переменным успехом, но всё же завоевала титул чемпионов в...
-        </p>
+        <div class="news-card-info">
+          <h1>
+            Чемпионы The<br>
+            international 2025
+          </h1>
+          <p>
+            Поздравляем команду Team Falcons — чемпионов The International 2025. В течение последнего года команда выступала с переменным успехом, но всё же завоевала титул чемпионов в...
+          </p>
+        </div>
       </div>
-    </div>
       <div class="news-card">
-          <img class="news-image-3" src="../images/home/sectionnews/image 214.png" height="169" width="300"/>
-      <div class="news-card-info">
-        <h1>
-          Обновление 7.41
-        </h1>
-        <p>
-          Вышло обновление 7.41. Список<br>изменений можно найти здесь. Кроме<br> того, мы внесли улучшения и исправили различные ошибки: Когда герой<br>применяет на союзника расходник или передаёт...
-        </p>
+        <img class="news-image-3" src="../images/home/sectionnews/image 214.png" height="169" width="300"/>
+        <div class="news-card-info">
+          <h1>
+            Обновление 7.41
+          </h1>
+          <p>
+            Вышло обновление 7.41. Список<br>изменений можно найти здесь. Кроме<br> того, мы внесли улучшения и исправили различные ошибки: Когда герой<br>применяет на союзника расходник или передаёт...
+          </p>
+        </div>
       </div>
-    </div>
     </div>
   </section>
 
@@ -514,13 +514,6 @@ body {
 
 .home-right-now img {
   transform: translateX(87px) translateY(-2px);
-}
-
-.right-now-shadow {
-  box-shadow: 0 180px 10px #000000;
-  width: 1922px;
-  margin: 0 auto;
-  height: 120px;
 }
 
 .news {

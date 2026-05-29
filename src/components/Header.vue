@@ -9,6 +9,7 @@
   <router-link class="header-page-news" to="Page2">ГЕРОИ</router-link>
   <router-link class="header-page-news" to="Page3">ИГРОКИ</router-link>
   </div>
+
 </template>
 
 <style scoped>
@@ -36,7 +37,7 @@ template {
 }
 .header-page img {
   height: 70px;
-  width: 100%;
+  width: 293px;
 }
 .header img {
   padding-left: 32px;
