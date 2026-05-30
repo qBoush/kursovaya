@@ -25,11 +25,6 @@ const router = createRouter({
       component: ()=>import('../views/Page3.vue'),
     },
     {
-      path: '/update-7.41',
-      name: 'update-7.41',
-      component: ()=>import('../views/update-7.41.vue'),
-    },
-    {
       path: '/alchemist',
       name: 'alchemist',
       component: ()=>import('../views/alchemist.vue'),

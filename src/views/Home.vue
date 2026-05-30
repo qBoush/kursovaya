@@ -60,16 +60,21 @@ export default {
 
 <template>
   <section class="home-right-now">
-    <div class="right-now-text">
-      <h1>НАЧИНАЙ<br> ПРЯМО СЕЙЧАС</h1>
-      <p>
-        «Добро пожаловать в Dota – уникальную игру, вдохновленную . Сражайтесь с друзьями,<br>
-        изучайте героев, каждый из которых обладает множеством уникальных способностей!»
-      </p>
-    </div>
-    <div class="home-right-now-button">
-      <img src="../images/home/Group 4.png" height="32" width="32"/>
-      <button class="right-now-button"> ИГРАТЬ БЕСПЛАТНО<br><span>СКАЧАТЬ В STEAM</span></button>
+    <video autoplay loop muted playsinline class="home-bg-video">
+      <source src="../images/home/background-right.mp4" type="video/mp4">
+    </video>
+    <div class="home-right-now-content">
+      <div class="right-now-text">
+        <h1>НАЧИНАЙ<br> ПРЯМО СЕЙЧАС</h1>
+        <p>
+          «Добро пожаловать в Dota – уникальную игру, вдохновленную . Сражайтесь с друзьями,<br>
+          изучайте героев, каждый из которых обладает множеством уникальных способностей!»
+        </p>
+      </div>
+      <div class="home-right-now-button">
+        <img src="../images/home/Group 4.png" height="32" width="32"/>
+        <button class="right-now-button"> ИГРАТЬ БЕСПЛАТНО<br><span>СКАЧАТЬ В STEAM</span></button>
+      </div>
     </div>
   </section>
 
@@ -460,11 +465,30 @@ body {
   padding: 0;
   background: #000;
 }
+
 .home-right-now {
-  background-image: url('../images/home/image 2.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 802px;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.home-bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.home-right-now-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
 }
 
 .home-right-now h1 {
@@ -659,9 +683,9 @@ body {
 }
 .what-your-hero-text1 {
   position: absolute;
-  top: 2400px;
   left: 0;
   right: 0;
+  padding-top: 100px;
   text-align: center;
   font-size: 51px;
   color: #FFFFFFB3;
@@ -673,6 +697,7 @@ body {
 .what-your-hero-text2 {
   color: #FFFFFF;
   font-size: 60px;
+
 }
 .what-your-hero-text-info {
   font-size: 30px;
@@ -686,6 +711,8 @@ body {
   position: absolute;
   z-index: 1;
   pointer-events: none;
+  padding-top: 120px;
+
 }
 .hero-grid-container {
   width: 100%;
@@ -724,7 +751,6 @@ body {
   position: relative;
   width: 100%;
   height: 140px;
-  cursor: pointer;
   background: #1a1a1a;
   border: none;
   transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
