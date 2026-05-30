@@ -25,6 +25,21 @@ const router = createRouter({
       component: ()=>import('../views/Page3.vue'),
     },
     {
+      path: '/reg',
+      name: 'reg',
+      component: ()=>import('../views/reg.vue'),
+    },
+    {
+      path: '/log',
+      name: 'log',
+      component: ()=>import('../views/log.vue'),
+    },
+    {
+      path: '/profile',
+      name: 'profile',
+      component: () => import('../views/profile.vue')
+    },
+    {
       path: '/alchemist',
       name: 'alchemist',
       component: ()=>import('../views/alchemist.vue'),

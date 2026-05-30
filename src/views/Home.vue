@@ -61,7 +61,7 @@ export default {
 <template>
   <section class="home-right-now">
     <video autoplay loop muted playsinline class="home-bg-video">
-      <source src="../images/home/background-right.mp4" type="video/mp4">
+      <source src="../images/home/background-right.webm" type="video/mp4">
     </video>
     <div class="home-right-now-content">
       <div class="right-now-text">
